@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <style>
+  @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+  .center {
+    margin: auto;
+    width: 250px;
+    border: 0px;
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    background-color: rgb(218, 218, 218);
+  }
+  .nameinput {
+    border: 0px;
+    padding: 5px;
+    border-radius: 5px;
+  }
+  .ingredient_input {
+    border: 0px;
+    padding: 5px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+  }
+  .add_ingredient_button {
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border: 0px;
+    padding: 5px;
+  }
+  .submit_meal {
+    border: 0px;
+    padding: 5px;
+    border-radius: 5px;
+    transition: 0.3s;
+    opacity: 0.6;
+  }
+  .submit_meal:hover {opacity: 1}
+  body {
+    font-family: 'Open Sans', sans-serif;
+  }
+  </style>
+  <body>
+<div class="center">
+  <h3>Add new meal</h3>
+  <form action="#">
+    <input class="nameinput" style="width: 240px" type="text" id="mealname" name="mealname" placeholder="Name"/><br><br>
+    <input class="add_ingredient_button" type="submit" value="+" style="float: right; width: 20px;"/>
+    <div style="overflow: hidden; padding-right: .5em;">
+       <input type="text" class="ingredient_input" style="width: 220px;" placeholder="Add ingredients"/>
+    </div>
+    <br>
+    <input class="submit_meal" type="submit" value="Submit">
+  </form>
+</body>
+</html>
