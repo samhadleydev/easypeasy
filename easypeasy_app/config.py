@@ -9,6 +9,4 @@ DEBUG = True
 
 # Connect to the database
 
-SQLALCHEMY_DATABASE_URI = "postgresql://{}:{}@localhost:5432/easypeasy".format(
-    "samhadleydev", "1234"
-)
+SQLALCHEMY_DATABASE_URI = "postgresql://samhadleydev:1234@localhost:5432/easypeasy"

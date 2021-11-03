@@ -21,8 +21,8 @@ class Ingredients(db.Model):
 
 meal_ingredients = db.Table(
     "meal_ingredients",
-    db.Column("meal_id", db.Integer, db.ForeignKey("Meals.id"), primary_key=True),
+    db.Column("meal_id", db.Integer, db.ForeignKey("meals.id"), primary_key=True),
     db.Column(
-        "ingredient_id", db.Integer, db.ForeignKey("Ingredients.id"), primary_key=True
+        "ingredient_id", db.Integer, db.ForeignKey("ingredients.id"), primary_key=True
     ),
 )
